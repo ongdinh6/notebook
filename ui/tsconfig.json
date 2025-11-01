@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+  },
+  "references": [
+    { "path": "./tsconfig.node.json" }
+  ]
+}

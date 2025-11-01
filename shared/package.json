@@ -1,0 +1,22 @@
+{
+  "name": "@notebook/shared",
+  "version": "1.0.0",
+  "description": "Common shared units",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "outDir": "dist",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest"
+  },
+  "exports": {
+    "./*": "./dist/*.js",
+    "./utils/*": "./dist/utils/*.js"
+  },
+  "author": "omdinh",
+  "license": "ISC",
+  "includes": ["src"],
+  "paths": {
+    "@notebook/shared/*": ["src/*"]
+  }
+}

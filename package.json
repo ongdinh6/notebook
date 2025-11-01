@@ -1,0 +1,46 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "Notebook Application",
+  "main": "index.ts",
+  "scripts": {
+    "dev:ui": "cd ui && npm run dev",
+    "dev:server": "cd server && npm run dev",
+
+    "build:shared": "cd shared && npm run build",
+    "build:ui": "cd ui && npm run build",
+    "build:server": "cd server && npm run build",
+
+    "preview:ui": "cd ui && npm run preview",
+
+    "build": "npm run build:shared && npm run build:ui && npm run build:server",
+    "start": "cd server && npm start",
+
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+
+    "test": "vitest"
+  },
+  "author": "omdinh",
+  "license": "ISC",
+  "workspaces": [
+    "server",
+    "ui",
+    "shared"
+  ],
+  "paths": {
+    "@notebook/shared/*": [
+      "shared/*/src"
+    ],
+    "@notebook/server/*": [
+      "server/*/src"
+    ],
+    "@notebook/ui/*": [
+      "ui/*/src"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  }
+}
