@@ -21,6 +21,10 @@
     "noUncheckedSideEffectImports": true,
 
     "composite": true,
+
+    "paths": {
+      "@notebook/ui/*": ["./src/*"]
+    }
   },
   "include": ["vite.config.ts"]
 }
