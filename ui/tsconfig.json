@@ -2,10 +2,18 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "module": "ESNext",
     "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "types": ["vite/client"],
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@globalStyles/*": ["src/globalStyles/*"],
+      "*": ["src/*"],
+    }
   },
+  "include": ["src"],
   "references": [
     { "path": "./tsconfig.node.json" }
   ]

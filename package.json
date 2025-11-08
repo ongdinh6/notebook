@@ -30,13 +30,13 @@
   ],
   "paths": {
     "@notebook/shared/*": [
-      "shared/*/src"
+      "shared/*"
     ],
     "@notebook/server/*": [
-      "server/*/src"
+      "server/*"
     ],
     "@notebook/ui/*": [
-      "ui/*/src"
+      "ui/*"
     ]
   },
   "devDependencies": {
